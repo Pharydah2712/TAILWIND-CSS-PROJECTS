@@ -140,71 +140,72 @@ document.querySelectorAll('[data-tab]').forEach(function(item) {
     //end tab
 
 
-    //start chart
-    new Chart(document.getElementById('order-chart'), {
-        type: 'line',
-        data: {
-          labels: generateNDays(7),
-          datasets: [{
-            label: 'Active',
-            data: generateRandomData(7),
-            borderWidth: 1,
-            fill: true,
-            pointBackgroundColor: 'rgb(16, 185, 129)',
-            borderColor: 'rgb(16, 185, 129 )',
-            backgroundColor: 'rgb(16, 185, 129 / .05)',
-            tension: .2
-          },
-          {
-            label: 'Completed',
-            data: generateRandomData(7),
-            borderWidth: 1,
-            fill: true,
-            pointBackgroundColor: 'rgb(16, 185, 129)',
-            borderColor: 'rgb(16, 185, 129)',
-            backgroundColor: 'rgb(16 185 129 / .05)',
-            tension: .2
-        },
+
+   //start:chart
+   new Chart(document.getElementById('order-chart'), {
+    type: 'line',
+    data: {
+      labels: generateNDays(7),
+      datasets: [
         {
-            label: 'Cancelled',
-            data: generateRandomData(7),
-            borderWidth: 1,
-            fill: true,
-            pointBackgroundColor: 'rgb(244, 63, 94)',
-            borderColor: 'rgb(244, 63, 94)',
-            backgroundColor: 'rgb(244 63 94 / .05)',
-            tension: .2
-        },
+        label: 'active',
+        data: generateRandomData(7),
+        borderWidth: 1,
+        fill: true,
+        pointBackgroundColor: 'rgb(16 185 129)',
+        orderColor: 'rgb(59 130 246)',
+        backgroundColor: 'rgb(59 185 129 / .05)',
+        tension: .2
+            },
+            {
+                label: 'completed',
+                data: generateRandomData(7),
+                borderWidth: 1,
+                fill: true,
+                pointBackgroundColor: 'rgb(16 185 129)',
+                borderColor: 'rgb(16 185 129)',
+                backgroundColor: 'rgb(16 185 129 / .05)',
+                tension: .2
+            },
+            {
+                label: 'cancelled',
+                data: generateRandomData(7),
+                borderWidth: 1,
+                fill: true,
+                pointBackgroundColor: 'rgb(239 68 68)',
+                borderColor: 'rgb(239 68 68)',
+                backgroundColor: 'rgb(239 68 68 / .05)',
+                tension: .2
+            },
         ]
-        },
-        options: {
-          scales: {
+    },
+    options: {
+        scales: {
             y: {
-              beginAtZero: true
+                beginAtZero: true
             }
-          }
         }
-      });
+    }
+});
 
-      function generateNDays(n) {
-        const data = []
-        for(let i=0; i<n; i++) {
-            const date = new Date()
-            date.setDate(date.getDate()-i)
-            data.push(date.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric'
-            }))
-        }
-        return data
-    }//
+function generateNDays(n) {
+    const data = []
+    for(let i=0; i<n; i++) {
+        const date = new Date()
+        date.setDate(date.getDate()-i)
+        data.push(date.toLocaleString('en-US', {
+            month: 'short',
+            day: 'numeric'
+        }))
+    }
+    return data
+}
+function generateRandomData(n) {
+    const data = []
+    for(let i=0; i<n; i++) {
+        data.push(Math.round(Math.random() * 10))
+    }
+    return data
+}
 
-      function generateNDays(n) {
-        const data = []
-        for(let i=0; i<n; i++) {
-            data.push(Math.round(Math.random() *10))
-        }
-        return data
-      }
-      
-   //end chart 
+   //end:chart

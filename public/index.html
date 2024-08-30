@@ -1073,7 +1073,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-4">
             <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
                 <div class="flex justify-between mb-4 items-start">
-                    <div class="font-medium">Manage Orders</div>
+                    <div class="font-medium">Order Statistics</div>
                     <div class="dropdown">
                         <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600"><span class="material-symbols-outlined">
                             more_horiz
@@ -1096,7 +1096,7 @@
                     <div class="rounded-md border border-dashed  border-gray-200 p-4">
                         <div class="flex items-center mb-0.5">
                             <div class="text-xl font-semibold">10</div>
-                            <span class="p-1 rounded text-[12px] font-semibold bg-blue-500/10 text-blue-500 leading-none ml-1">$80</span>     
+                            <span class="p-1 rounded text-[12px] font-semibold bg-emerald-500/10 text-emerald-500 leading-none ml-1">$80</span>     
                         </div>
                         <span class="text-gray-400 text-sm">Active</span>
                     </div>
@@ -1119,7 +1119,7 @@
             </div>
             <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
                 <div class="flex justify-between mb-4 items-start">
-                    <div class="font-medium ">Manage Services</div>
+                    <div class="font-medium ">Earnings</div>
                     <div class="dropdown">
                         <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
                             more_horiz
@@ -1138,17 +1138,7 @@
                         </ul>
                     </div>
                 </div>
-             <form action="" class="flex items-center mb-4">
-                <div class="relative w-full mr-2">
-                    <input type="text" class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-600" placeholder="search...">
-                    <span class="material-symbols-outlined absolute top-1/2 left-4 -translate-y-1/2 text-gray-400">
-                        search
-                        </span>
-                </div>
-                <select class="text-sm py-2 pl-4 pr-10 bg-gray-50 border border-gray-100 rounded-md   focus:border-blue-600 outline-none appearance-none">
-                    <option value="">All</option>
-                </select>
-             </form>   
+             
                 <div class="overflow-x-auto">
                     <table class="w-full min-w-[400px]">
                         <thead>
@@ -1156,48 +1146,30 @@
                                 <th class="text-[8px] uppercase tracking-wide font-bold text-gray-800 py-4 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">
                                     Services</th>
                                 <th class="text-[8px] uppercase tracking-wide font-bold text-gray-800 py-4 px-4 bg-gray-50 text-left">
-                                    Price</th>
+                                    Earning</th>
                                 <th class="text-[8px] uppercase tracking-wide font-bold text-gray-800 py-4 px-4 bg-gray-50 text-left">
-                                    Clicks</th>
+                                    Status</th>
                                 <th class="text-[8px] uppercase tracking-wide font-bold text-gray-800 py-4 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">
                             </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="py-2 px-2 border-b border-gray-100">
-                                    <div class="flex items-center">
-                                        <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
-                                        <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
-                                    </div>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">7</span>
-                                    
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
+                            <td class="py-2 px-2 border-b border-gray-100">
+                                <div class="flex items-center">
+                                    <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
+                                    <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
                                 </div>
-                                </td>
+                            </td>
+                            <td class="py-2 px-4 border-b border-gray-100">
+                                <span class="text-[13px] font-medium text-emerald-500">$350</span>
+                            </td>
+                            <td class="py-2 px-4 border-b border-gray-100">
+                                <span class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none
+                                ">Pending</span>
+                            </td>
+                            </td>
                             </tr>
-
                             <tr>
                                 <td class="py-2 px-2 border-b border-gray-100">
                                     <div class="flex items-center">
@@ -1206,32 +1178,12 @@
                                     </div>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
+                                    <span class="text-[13px] font-medium text-red-500">$350</span>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">107</span>
-                                    
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <span class="inline-block p-1 rounded bg-rose-500/10 text-red-500 font-semibold text-[12px] leading-none">Withdrawn</span>
                                 </td>
                             </tr>
-
                             <tr>
                                 <td class="py-2 px-2 border-b border-gray-100">
                                     <div class="flex items-center">
@@ -1240,32 +1192,44 @@
                                     </div>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
+                                    <span class="text-[13px] font-medium text-emerald-500">$350</span>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">647</span>
-                                    
+                                    <span class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none
+                                    ">Pending</span>
                                 </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
                                 </td>
-                            </tr>
-
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-2 border-b border-gray-100">
+                                        <div class="flex items-center">
+                                            <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
+                                            <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 px-4 border-b border-gray-100">
+                                        <span class="text-[13px] font-medium text-red-500">$350</span>
+                                    </td>
+                                    <td class="py-2 px-4 border-b border-gray-100">
+                                        <span class="inline-block p-1 rounded bg-rose-500/10 text-red-500 font-semibold text-[12px] leading-none">Withdrawn</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-2 border-b border-gray-100">
+                                        <div class="flex items-center">
+                                            <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
+                                            <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
+                                        </div>
+                                    </td>
+                                    <td class="py-2 px-4 border-b border-gray-100">
+                                        <span class="text-[13px] font-medium text-emerald-500">$350</span>
+                                    </td>
+                                    <td class="py-2 px-4 border-b border-gray-100">
+                                        <span class="inline-block p-1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none
+                                        ">Pending</span>
+                                    </td>
+                                    </td>
+                                    </tr>
                             <tr>
                                 <td class="py-2 px-2 border-b border-gray-100">
                                     <div class="flex items-center">
@@ -1274,97 +1238,10 @@
                                     </div>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
+                                    <span class="text-[13px] font-medium text-red-500">$350</span>
                                 </td>
                                 <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">790</span>
-                                    
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="py-2 px-2 border-b border-gray-100">
-                                    <div class="flex items-center">
-                                        <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
-                                        <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
-                                    </div>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">1000</span>
-                                    
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="py-2 px-2 border-b border-gray-100">
-                                    <div class="flex items-center">
-                                        <img src="images/pexels-secret-garden-333350-931177.jpg" alt="" class="w-4 h-4 rounded-full object-cover block">
-                                        <a href="#" class="text-gray-600 text-sm font-medium hover:text-blue-500 ml-2 truncate">Create Landing Page</a>
-                                    </div>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">$400</span>
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                    <span class="text-[13px] font-medium text-gray-400">1000</span>
-                                    
-                                </td>
-                                <td class="py-2 px-4 border-b border-gray-100">
-                                <div class="dropdown">
-                                    <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><span class="material-symbols-outlined">
-                                        more_vert
-                                        </span></button>
-                                    <ul class="dropdown-menu shadow-md shadow-black/5 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                    <span class="inline-block p-1 rounded bg-rose-500/10 text-red-500 font-semibold text-[12px] leading-none">Withdrawn</span>
                                 </td>
                             </tr>
                         </tbody>
